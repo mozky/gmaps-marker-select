@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GMaps Marker Select</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <h1>Google Maps Marker Selector</h1>
+    <div id="map_div" style="height: 400px;"></div>
+    <div id="selects">
+      <select id="stateSelect">
+        <option value="cdmx">
+          CDMX
+        </option>
+        <option value="edomex">
+          Edo. Mexico
+        </option>
+      </select>
+      <select id="schoolSelect">
+        <option value="">Selecciona una escuela</option>
+        <option value="escuela1">Escuela fulanito 1</option>
+        <option value="escuela2">Escuela fulanito 2</option>
+      </select>
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBcU8IcC_cjQYV_IW6HptDeY9qn9THUn5w&callback=initMap"
+    async defer></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
