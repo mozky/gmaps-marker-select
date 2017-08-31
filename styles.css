@@ -9,14 +9,47 @@ h1, p {
   text-align: center;
 }
 
+#wrapper {
+  flex-flow: column nowrap;
+  height: 100vh;
+}
+
 #map_div {
-  height: 400px;
+  height: 85vh;
   width: 100% ;
 }
 
 #selects {
-  top: 0px;
-  margin-top: 50px;
-  left: 40%;
-  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2em 0 2em 0;
+}
+
+.styled_select {
+    border: 1px solid #ccc;
+    width: 230px;
+    margin: 1em;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 90% 50%;
+}
+
+.styled_select select {
+    padding: 5px 8px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.styled_select select:focus {
+    outline: none;
+}
+
+select::-ms-expand {
+    display: none;
 }
